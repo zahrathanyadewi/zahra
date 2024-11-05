@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="in">
+<head>
+    <meta charset="UTF-8">
+    <title>Judul halaman</title>
+</head>
+<style>
+      .navbar{
+           position:fixed;
+           top:50;
+           width:100%;
+           background-color: blue;
+           padding: 15px;
+           left:0;
+           right:0;
+           z-index: 1000px;
+           text-align: center;
+          }
+
+      .navbar a{
+           color:white;
+           padding: 14px;
+          }
+
+      .head{display: flex;
+          justify-content: space-between;
+          align-items: left;
+          padding:50px;
+         }
+     .gambar1{width: 450px;
+         height: 400px;
+         float:right;
+         margin:qppx
+         margin-top:-20;
+        }
+
+     .kotak{
+          background-color:blue;
+          color:white;
+          padding: 20px;
+          margin:10px;
+          border-radius: 5px;
+          width: 200px;
+          font-size: 18px;
+          font-weight: 20px;
+        }
+     .container {
+         display:flex;
+         flex-wrap: wrap;
+         justify-content: space-between;
+         align-items: center;
+         padding: 20px;
+         background-color: blue;
+         color:white ;
+       }
+
+    .item{
+        flex :1 1 25%;
+        margin: 20px;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+       }
+    .kontainer{
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        margin-top: 20px;
+        margin-left: 100px;
+        margin-right: 100px;
+       }
+    .card{
+        display: flex ;
+        background-color: grey;
+        border-radius: 15px;
+        padding: 20px;
+        width: 48%;
+        box-shadow: 0 4px 8px;
+      }
+    .card img{
+        width: 150px;
+        height: auto ;
+        border-radius: 10px;
+        margin-right: 20px;
+       }
+    .card-content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       }
+    .card-content h3{
+        font-size: 18px;
+        margin-bottom: 10px;
+       }
+    .card-content p{
+        font-size: 14px;
+        line-height: 1.6;
+        margin-top: 10px;
+       }
+    .tulisan{
+        font-size: 72px;
+        font-weight: bold;
+        text-align: center;
+        margin-top: 30px;
+        color: grey;
+      }
+    .Tulisan1{
+        font-size:300px;
+        font-weigth:bold;
+        padding:50px;
+        margin-top:50px;
+        color:grey;
+       }
+    .gambar1{width: 450px;
+        height: 450px;
+        }
+   .tulisan2{
+        font-size:25px;
+        font-weigth:bold;
+        text-align:left;
+        color:black;
+        }
+   .pusing {
+       display:flex;
+       justify-content:space-between;
+       gap:100px;
+       margin-top:40px;
+       margin-left:100px;
+       margin-right:100px;
+       }
+   .tulisan3{
+       font-size:10px;
+       font-weigth:bold;
+       text-align:center;
+       color:black;
+       }
+   .kecil {
+       font-size: 12px;
+       }
+   .tulisan4{
+       font-size:35px;
+       font-weigth:bold;
+       text-align:center;
+       color:grey;
+       }
+   .grid-container {
+       display: grid;
+       grid-template-columns: repeat(3, 1fr);
+       gap: 10px;
+       }
+   .grid-container img {
+       width: 100%;
+       height: auto;
+      }
+   .tulisan5{
+       font-size:50px;
+       font-weigth:bold;
+       text-align:center;
+       margin-top:30px;
+       color:grey;
+       }
+   .main-container {
+       width: 100%;
+       padding: 20px;
+      }
+
+   .career-container, .industry-container {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); 
+      gap: 15px;
+      margin-bottom: 40px;
+     }
+   .career-item {
+      background-color:blue; 
+      color: white;
+      padding: 15px;
+      text-align: center;
+      font-weight: bold;
+      border-radius: 5px;
+     }
+   .tulisan5{
+      font-size:50px;
+      font-weigth:bold;
+      text-align:center;
+      margin-top:30px;
+      color:grey;
+      }
+    .kerjasama-industri {
+       text-align: center;
+       margin: 50px 0;
+      }
+
+    .kerjasama-industri h2 {
+       font-size: 2em;
+       color: #0000FF; 
+       }
+
+    .industry-container {
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: center;
+       gap: 20px;
+      }
+
+   .industry-item {
+      background-color: #0000FF;
+      color: #fff;
+      width: 150px;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+     }
+
+   .industry-item img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 10px;
+      }
+
+   .industry-item h3 {
+      margin: 10px 0;
+      font-size: 1.2em;
+     }
+
+   .industry-item p {
+      font-size: 0.9em;
+      }
+</style>
+<body>
+  <nav class= "navbar">
+    <a href="#">Home</a>
+    <a href="#">Program</a>
+    <a href="#">Prestasi</a>
+    <a href="#">Industri</a>
+    <a href="#">Karir</a>
+    <a href="#">Tentang Kami</a>
+    </nav>
+    <header class="head">
+     <br>
+     <br>
+   <br>
+      <section>
+    <h1> Rekayasa Perangkat Lunak </h1>
+    <h3>Perangkat lunak adalah istilah khusus untuk data yang diformat dan disimpan secara digital,<br>termasuk program komputer, dokumentasinya, dan berbagai informasi yang bisa dibaca, dan ditulis oleh komputer.<br> Dengan kata lain,bagian sistem komputer yang tidak berwujud.</h3>
+    </section>
+        <img class=gambar1 src ="foto.jpg">
+</header>
+<section class="container">
+    <div class="item">
+        <h3>UI/UX</h3>
+        <p>Merancang tampilan pengguna UI dan pengalam pengguna (UX) yang intuitif dan menarik</p>
+    </div>
+    <div class="item">
+        <h3>Mobile</h3>
+        <p>Merancang tampilan pengguna UI dan pengalam pengguna (UX) yang intuitif dan menarik</p>
+    </div>
+    <div class="item">
+        <h3>PBO</h3>
+        <p>Merancang tampilan pengguna UI dan pengalam pengguna (UX) yang intuitif dan menarik</p>
+    </div>
+       <div class="item">
+        <h3>UI/UX</h3>
+        <p>Merancang tampilan pengguna UI dan pengalam pengguna (UX) yang intuitif dan menarik</p>
+    </div>
+    <div class="item">
+        <h3>Mobile</h3>
+        <p>Merancang tampilan pengguna UI dan pengalam pengguna (UX) yang intuitif dan menarik</p>
+    </div>
+    <div class="item">
+        <h3>PBO</h3>
+        <p>Merancang tampilan pengguna UI dan pengalam pengguna (UX) yang intuitif dan menarik</p>
+    </div>
+         </section>
+<section>
+    <div class="tulisan">
+        <h1>GENERASI TEKNOLOGI, <br> PENCETAK PRESTASI</h1>
+        </div>
+    <div class="kontainer">
+        <div class="card"><img src="juara.jpg" alt="">
+    <div class="card-content">
+    <h3>RPL menorehkan prestasi</h3>
+    <p>Juara LKS Tingkat Kabupaten.
+       Dengan tekad dan kerja keras,siswa RPL berhasil meraih juara dalam Lomba Kompetensi Siswa Tingkat Kabupaten.Prestasi ini menjadi motivasi bagi seluruh siswa untuk terus berkembang dan menggapai kesuksesan di masa pendatang.Pencapaian Luar Biasa!</p>
+       </p>
+     </div>
+  </div>
+        <div class="card"><img src="juara.jpg" alt="">
+    <div class="card-content">
+    <h3>RPL menorehkan prestasi</h3>
+    <p>Juara LKS Tingkat Kabupaten.
+       Dengan tekad dan kerja keras,siswa RPL berhasil meraih juara dalam Lomba Kompetensi Siswa Tingkat Kabupaten.Prestasi ini menjadi motivasi bagi seluruh siswa untuk terus berkembang dan menggapai kesuksesan di masa pendatang.Pencapaian Luar Biasa!</p>
+    </div>
+   </div>
+   
+  </div>
+</section>
+<Section>
+    <div class="pusing">
+    <div class="tulisan2">
+    <h1> TENTANG KAMI</h1>
+    <div>
+ <img class="gambar1" src="sekolah.jpg" alt="">
+ </div>
+</div>
+<div class="kiri">
+<div class="tulisan3">
+    <h1> VISI </h1>
+</div>
+<div>
+    <p class="kecil">Menjadi pusat pengembangan sumber daya manusia unggul dalam bidang rekayasa perangkat lunak yang inovatif, berintegritas, dan mampu bersaing secara global, serta berkontribusi pada perkembangan teknologi dan solusi digital yang berkelanjutan </p>
+    </div>
+    <div class="tulisan3">
+    <h1> MISI </h1>
+</div>
+<div>
+    <p class="kecil"> 1. Mengembangkan kurikulum berbasis teknologi terkini yang relevan dengan kebutuhan industri, untuk menghasilkan lulusan yang siap bersaing di pasar global.
+<br>
+2. Mendorong inovasi dan kreativitas melalui proyek-proyek berbasis penelitian dan pengembangan perangkat lunak, yang mampu menyelesaikan permasalahan nyata di masyarakat.
+<br>
+3. Menyelenggarakan pelatihan dan sertifikasi profesional bagi siswa agar memiliki keahlian teknis yang sesuai standar industri.
+<br>
+4. Membangun jaringan kolaborasi dengan berbagai perusahaan teknologi, lembaga penelitian, dan komunitas IT untuk memperluas wawasan dan pengalaman praktis bagi siswa.
+<br>
+
+5. Menumbuhkan etika profesional dan integritas dalam setiap proses pengembangan perangkat lunak, untuk menciptakan solusi digital yang bertanggung jawab dan berkelanjutan.
+</p>
+  </div>
+  </div>
+</section>
+<section>
+    <div class="tulisan4">
+    <h1> TUJUAN</h1>
+    </div>
+    <p class="kecil">1. Menciptakan Perangkat Lunak yang Berkualitas
+RPL bertujuan untuk menghasilkan perangkat lunak yang berkualitas tinggi, yaitu perangkat lunak yang andal, efisien, dan dapat memenuhi kebutuhan pengguna.
+<br>
+
+2. Meningkatkan Efisiensi dan Produktivitas
+Dengan menerapkan metodologi dan proses pengembangan yang terstruktur, RPL membantu meningkatkan efisiensi kerja tim pengembang, mengurangi waktu dan biaya pengembangan, serta meningkatkan produktivitas.
+
+<br>
+3. Menyediakan Solusi yang Mudah Dipelihara
+Salah satu tujuan utama RPL adalah menciptakan perangkat lunak yang mudah dipelihara. Perangkat lunak yang baik memungkinkan modifikasi dan perbaikan yang mudah di masa depan tanpa merusak fungsi utama.
+
+<br>
+4. Meningkatkan Keamanan dan Keandalan
+RPL berfokus pada pembuatan perangkat lunak yang aman dan andal, terutama untuk aplikasi yang menangani data sensitif atau memiliki dampak signifikan pada bisnis dan pengguna.
+
+<br>
+5. Mendukung Inovasi dan Perkembangan Teknologi
+Melalui praktik RPL yang baik, pengembang dapat menciptakan solusi teknologi baru yang inovatif, baik itu dalam bentuk produk, aplikasi, maupun sistem yang mempercepat transformasi digital.
+
+<br>
+6. Memastikan Kepuasan Pengguna
+Dengan memenuhi kebutuhan pengguna dan memberikan pengalaman yang positif, RPL bertujuan agar perangkat lunak yang dibuat bermanfaat dan memuaskan bagi pengguna, sehingga perangkat lunak tersebut diterima dan diadopsi dengan baik.</p>
+</section>
+<section>
+    <div class="tulisan4">
+        <h1>TIM PENGAJAR</h1>
+    </div>
+    <div class="grid-container">
+        <img src="guru1.jpg" alt="">
+        <img src="guru2.jpg" alt="">
+        <img src="guru3.jpg" alt="">
+    </div>
+</section>
+<section>
+    <div class="tulisan5">
+    <h1>PELUANG KARIR</h1>
+    </div>
+    <div class="career-container">
+  <div class="career-item">Software Developer</div>
+  <div class="career-item">Web Developer</div>
+  <div class="career-item">Mobile App Developer</div>
+  <div class="career-item">Database Administrator</div>
+  <div class="career-item">UI/UX Designer</div>
+  <div class="career-item">Software Tester</div>
+  <div class="career-item">System Analyst</div>
+  <div class="career-item">Game Developer</div>
+</div>
+</section>
+<section>
+ <div>
+     <h2 class="tulisan5">
+         KERJASAMA INDUSTRI </h2>
+  <div class="industry-container">
+    <div class="industry-item">
+      <img src="java.jpg" alt="Java Logo">
+      <h3>Java</h3>
+      <p>Deskripsi singkat tentang Java.</p>
+    </div>
+    <div class="industry-item">
+      <img src="python.jpg" alt="Python Logo">
+      <h3>Python</h3>
+      <p>Deskripsi singkat tentang Python.</p>
+    </div>
+    <div class="industry-item">
+      <img src="python.jpg" alt="">
+      <h3>Python</h3>
+      <p>Deskripsi singkat tentang Python.</p>
+    </div>
+    <div class="industry-item">
+      <img src="python.jpg" alt="">
+      <h3>Python</h3>
+      <p>Deskripsi singkat tentang Python.</p>
+    </div>
+    <div class="industry-item">
+      <img src="java.jpg" alt="">
+      <h3>Java</h3>
+      <p>Deskripsi singkat tentang Java.</p>
+    </div>
+    <div class="industry-item">
+      <img src="python.jpg" alt="">
+      <h3>Python</h3>
+      <p>Deskripsi singkat tentang Python.</p>
+    </div>
+    <div class="industry-item">
+      <img src="python.jpg" alt="">
+      <h3>Python</h3>
+      <p>Deskripsi singkat tentang Python.</p>
+    </div>
+    <div class="industry-item">
+      <img src="python.jpg" alt="Python Logo">
+      <h3>Python</h3>
+      <p>Deskripsi singkat tentang Python.</p>
+    </div>
+  </div>
+</div>
+</div>
+ </section>
+  
+</body>
+</html>
+</body>
+</html>
